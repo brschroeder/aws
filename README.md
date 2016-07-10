@@ -11,6 +11,8 @@ Do sudo su - to gain root access, then yum repolist to list of repositories conf
 yum install wget
 wget http://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-7.noarch.rpm
 rpm -ivh epel-release-7-7.noarch.rpm
+yum update
+yum install R
 
 
 
