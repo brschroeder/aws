@@ -18,15 +18,18 @@ Now it is just like any other real machine. Switch to the root user as follows
 ```bash
 sudo su - 
 ```
+You will notice that the only package repositories that are included and enabled are the default CentOS ones. If you want to include the EPEL repository do the following (do a second "yum repolist" to verify the repository is install and enabled)
 
-
-
-then yum repolist to list of repositories configured. Need to add EPEL repository as follows (need to install wget first since it is not in default install)
-
+```bash
+yum repolist
 yum install wget
 wget http://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-7.noarch.rpm
 rpm -ivh epel-release-7-7.noarch.rpm
+yum repolist
 yum update
+```
+
+
 yum install R
 
 install aws bundle if not using amazon linux (as root)
