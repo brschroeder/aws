@@ -1,4 +1,4 @@
-# Amazon Web Services
+# Installing Centos 7 on Amazon Web Services 
 
 ## Getting Started
 
